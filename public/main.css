@@ -1,0 +1,333 @@
+*{
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+body{
+    width: 100%;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    height: 180px;
+    padding-bottom: 20px;
+
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ml-logo{
+    width: 40%;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-label{
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+nav ul{
+    display: none;
+}
+
+a{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+nav .fa-bars{
+    background-color:#1259c3; 
+    text-align: center;
+    padding: 10px;
+    width: 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.search-bar-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    background-color: #fff;
+    width: 40%;
+    height: 18px;
+    border-radius: 3px;
+    border:solid #fff 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #666;
+    font-size: 16px;
+}
+
+.lupa{
+    background-color: #fff;
+    width: fit-content;
+    height: 18px;
+    color: #848484;
+    border-radius: 3px;
+    border:solid #fff 10px;
+}
+
+.cartel-cuotas{
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ------------- main -------------- */
+main{
+    background-color: #ebebeb;
+    align-self: auto;
+    padding: 2%;
+    width: 90%;
+}
+
+.titulares{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.articulos{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+    border-top: solid 1px #ebebeb;
+    transition: 300ms;
+
+}
+
+.articulos:hover{
+    box-shadow : 0px 0px 10px 0px rgba(0, 0, 0, 0.75)
+}
+
+section div img{
+    width: 100%;
+}
+
+.lista-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion{
+    position: relative;
+    padding: 15px;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: solid 1px #ebebeb;
+}
+
+.precios{
+    width: 30%;
+    font-size: 18px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.oferta{
+    color: #39b54a;
+    font-size: 16px;
+    width: 60%;
+    display: flex;
+    justify-content: left;
+}
+
+h4{
+    font-size: 16px;
+    width: 100%;
+    opacity: 0%;
+    transition: 300ms;
+    
+}
+
+h4:hover{
+    opacity: 100%;
+}
+
+main .lista-articulos .articulos i{
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    color: #39b54a ;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 10px;
+    top: -15px;
+    transition: 500ms;
+    z-index: 999;
+}
+
+main .lista-articulos .articulos i:hover{
+    transform: rotate(-90deg)
+}
+
+footer{
+    background-color: #fff;
+    color:#666;
+    text-align: center;
+    border: solid #ebebeb 5px;
+    padding: 40px;
+}
+
+.iconos-footer{
+    color: #1259c3;
+    font-size:xx-large;
+    transition: 300ms;
+}
+    
+.iconos-footer:hover{
+    color: rgb(192, 192, 0);
+}
+
+footer section{
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 361px){ /*  tablet  */ 
+    header{
+        height: fit-content;
+    }
+
+    .header-div{
+        justify-content: normal;
+    }
+
+    .ml-logo{
+        width: 100%;
+    }
+
+    .search-bar-main{
+        width: 100%;
+    }
+
+    .cartel-cuotas{
+        width: 100%;
+    }
+
+    .lupa{
+        margin-left: 5px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .articulos{ 
+        box-shadow : 0px 0px 10px 0px rgba(100,100,100,0.75);
+        width: 40%;
+    }
+
+    .lista-articulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+
+    .precios{
+        font-size: 16px;
+    }
+
+    .oferta{
+        justify-content: center;
+    }
+
+    .nav-label{
+        display: none;
+    }
+
+    .nav-item{
+        font-size: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul .div-izq{
+        display: flex;
+    }
+
+    nav ul .div-der{
+        display: flex;
+    }
+
+    nav ul div li{
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px){ /*  desktop  */
+    .lista-articulos{
+        flex-wrap: nowrap;
+    }
+
+    .nav-item{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .precios{
+        font-size: 18px;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    footer section{
+        width: 33%;
+    }
+}
