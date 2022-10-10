@@ -8,12 +8,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views.login.html'))
+    res.sendFile(path.resolve(__dirname, 'views.login.html'))
 
 })
 
 app.get('/register', (req,res)=> {
-    res.sendFile(path.join(dirname, './views/register.html'))
+    res.sendFile(path.resolve(dirname, './views/register.html'))
 })
 
 app.use(express.static('public'))
