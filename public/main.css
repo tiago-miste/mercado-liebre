@@ -230,6 +230,43 @@ footer section{
     margin-bottom: 20px;
 }
 
+/* REGISTER */
+
+.animacion-b{
+    transition: 300ms;
+}
+
+.animacion-b:hover{
+    background-color: #0022AA;
+}
+
+form p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fecha-nac{
+    margin-top: 10px;
+}
+
+p .regnegrita, .regnegrita{
+    font-style: black bold;
+    background-color: #EAC926;
+    border: solid 1px black;
+    padding: 3px;
+}
+
+.regnegrita{
+    width: fit-content;
+}
+
+.login-og{
+    background-color: #d2d2d2;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width: 361px){ /*  tablet  */ 
     header{
         height: fit-content;
